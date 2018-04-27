@@ -2,7 +2,7 @@
         <div class="dashboard">
           <div style="outline: 1px solid;" v-for="board in boards">
             <div class="board"  @click="activeBoard(board.id)">
-              <h1>{{board.title}}</h1>
+              <h1>{{board.name}}</h1>
               <h5>{{board.description}}</h5>
             </div>  
               <button @click="remove(board.id)">Delete</button>
